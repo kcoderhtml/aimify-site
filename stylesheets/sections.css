@@ -1,0 +1,123 @@
+.section-1 {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1.25fr 1.75fr;
+}
+
+.section-2 {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1.75fr 1.25fr;
+}
+
+.section-3 {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.section-4 {
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    border-top: 2px solid rgba(255, 255, 255, 0.6);;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10%;
+}
+
+footer p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+
+    padding: 1em;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+.card {
+
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    margin: 5%;
+    height: 60vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.card-tall {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    margin: 5%;
+    height: 80vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.card-flex {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 30px;
+    margin: 5%;
+    height: 60vh;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+}
+
+.card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+
+    margin-top: 0;
+
+    padding: 1em;
+    padding-top: 0;
+    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.card h2 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+
+    margin-top: 0;
+
+    padding: 1em;
+    padding-left: 0.6em;
+    padding-bottom: 0.3em;
+    
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card-flex img {
+    display: block;
+    margin: auto;
+    height: 80%;
+    border-radius: 30px;
+}
+
+/*
+.card img {
+    display: block;
+    position: relative;
+    margin: auto;
+    height: 80%;
+    border-radius: 30px;
+    text-align: center;
+}

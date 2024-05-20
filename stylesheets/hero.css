@@ -1,0 +1,38 @@
+.hero-banner {
+    width: 100vw;
+    height: 100vh;
+
+    background-image:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../assets/coverImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.hero-text {
+    margin-left: 3%;
+}
+
+.intro-title {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 5em;
+
+    margin-top: 0;
+    padding-top: 1em;
+    
+    color: white;
+}
+
+.intro-text {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+
+    margin-top: 0;
+    padding-top: 1em;
+    width: 35vw;
+    
+    color: white
+}
