@@ -1,27 +1,37 @@
 .section-1 {
-    height: 70vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1.25fr 1.75fr;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    overflow: hidden
+    
 }
 
 .section-2 {
     height: 70vh;
     display: grid;
     grid-template-columns: 1.75fr 1.25fr;
+    margin-bottom: 10vh;
+    overflow: hidden
 }
 
 .section-3 {
-    height: 70vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-left: 7%;
     padding-right: 7%;
+    margin-bottom: 10vh;
+    overflow: hidden
 }
 
 .section-4 {
-    height: 70vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 10vh;
+    overflow: hidden
 }
 
 footer {
@@ -29,6 +39,7 @@ footer {
     text-align: center;
     padding: 5px;
     margin-top: 10%;
+    overflow: hidden
 }
 
 footer p {
@@ -39,6 +50,8 @@ footer p {
     padding: 1em;
     
     color: rgba(255, 255, 255, 0.6);
+
+    overflow: hidden
 }
 
 
@@ -47,20 +60,25 @@ footer p {
     background-color: rgba(255, 255, 255, 0.02);
     border-radius: 30px;
     margin: 5%;
-    height: 60vh;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+    min-height: 70vh;
+    overflow: hidden
 }
 
 .card-tall {
     background-color: rgba(255, 255, 255, 0.02);
     border-radius: 30px;
     margin: 5%;
-    height: 80vh;
+    height: auto;
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+    min-height: 70vh;
+    overflow: hidden;
+    
 }
 
 .card-flex {
@@ -76,6 +94,7 @@ footer p {
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+    overflow: hidden
 }
 
 .card p {
@@ -89,6 +108,7 @@ footer p {
     padding-top: 0;
     
     color: rgba(255, 255, 255, 0.6);
+    overflow: hidden
 }
 
 .card h2 {
@@ -103,6 +123,7 @@ footer p {
     padding-bottom: 0.3em;
     
     color: rgba(255, 255, 255, 0.9);
+    overflow: hidden
 }
 
 .card-flex img {
@@ -110,6 +131,7 @@ footer p {
     margin: auto;
     height: 80%;
     border-radius: 30px;
+    overflow: hidden
 }
 
 /*
