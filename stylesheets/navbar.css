@@ -13,7 +13,7 @@ body {
     
     /*Sizing*/
     height: 8vh;
-    width: 100vw;
+    width: 100%;
     
     /*Content Layout*/
     justify-content: space-between;
