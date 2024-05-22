@@ -1,0 +1,39 @@
+.button-card {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+
+    bottom: 0;
+    margin-left: 1em;
+    margin-bottom: 2em;
+
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 2%;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+
+    text-align: center;
+}
+
+.button-card:hover{
+    background-color: rgba(255, 255, 255, 0.35);
+    transition: 0.5s;
+}
+
+@media (width <= 60rem) {
+    .button-card {
+        display: block;
+        margin-top: 3em;
+        position: unset;
+    }
+}

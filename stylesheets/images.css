@@ -40,14 +40,14 @@
 
 @media (width <= 60rem) {
     .cvat-card{
-        height: 40vh;
+        height: 50vh;
     }
 
     .figma-card{
-        height: 40vh;
+        height: 50vh;
     }
 
     .ad-card {
-        height: 40vh;
+        height: 50vh;
     }
 }
