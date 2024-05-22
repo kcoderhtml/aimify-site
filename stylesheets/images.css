@@ -1,0 +1,53 @@
+.cvat-card {
+    
+    display: block;
+    background-color: rgba(255, 255, 255, 0.02);
+    margin: 1.5em;
+    border-radius: 30px;
+
+    background-image: url(../assets/cvatScreenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.figma-card {
+    
+    display: block;
+    background-color: rgba(255, 255, 255, 0.02);
+    margin: 1.5em;
+    border-radius: 30px;
+
+    background-image: url(../assets/figmaScreenshot.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.ad-card {
+    
+    display: block;
+    background-color: rgba(255, 255, 255, 0.02);
+    margin: 1.5em;
+    border-radius: 30px;
+
+    background-image: url(../assets/ad-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (width <= 60rem) {
+    .cvat-card{
+        height: 40vh;
+    }
+
+    .figma-card{
+        height: 40vh;
+    }
+
+    .ad-card {
+        height: 40vh;
+    }
+}

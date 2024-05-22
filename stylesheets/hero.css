@@ -1,26 +1,22 @@
 .hero-banner {
     
-    height: 100vh;
+    min-height: 100vh;
 
     background-image:
     linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url("../assets/coverImage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center bottom;
-}
-
-.hero-text {
-    margin-left: 3%;
+    background-position: center top;
 }
 
 .intro-title {
     font-family: "League Spartan", sans-serif;
     font-weight: 500;
-    font-size: 5em;
+    font-size: 5rem;
 
     margin-top: 0;
-    padding-top: 1em;
+    padding-top: 10%;
     
     color: white;
 }
@@ -31,8 +27,41 @@
     font-size: 1em;
 
     margin-top: 0;
-    padding-top: 1em;
-    width: 35vw;
+    padding-top: 1%;
+    width: 35%;
     
     color: white
+}
+
+.register-interest {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 6%;
+    margin-bottom: 6%;
+
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: fit-content;
+    width: fit-content;
+    padding: 1%;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+
+    text-align: center;
+}
+
+.register-interest:hover{
+    background-color: rgba(255, 255, 255, 0.35);
+    transition: 0.5s;
+}
+
+.hero-text {
+    margin-left: 3%;
 }

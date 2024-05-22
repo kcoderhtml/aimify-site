@@ -1,44 +1,72 @@
-.section-1 {
-    height: auto;
-    display: grid;
-    grid-template-columns: 1.25fr 1.75fr;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
-    overflow: hidden
+/*
+
+background-color: rgba(255, 255, 255, 0.02);
+box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
+border-radius: 30px;
+*/
+
+
+.main-content {
+    display: block;
+    padding: 3%;
     
 }
 
-.section-2 {
-    height: 70vh;
+.grid-1-2 {
     display: grid;
-    grid-template-columns: 1.75fr 1.25fr;
-    margin-bottom: 10vh;
-    overflow: hidden
+    grid-template-columns: 1fr 2fr;
+    height: 70vh;
 }
 
-.section-3 {
-    height: auto;
+.grid-2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    height: 70vh;
+}
+
+.grid-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
-    margin-bottom: 10vh;
-    overflow: hidden
+    height: 70vh;
 }
 
-.section-4 {
-    height: auto;
+.grid-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 10vh;
-    overflow: hidden
+    height: 70vh;
 }
+
+.card {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.02);
+    margin: 1.5em;
+    border-radius: 30px;
+
+}
+
+.card p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 3%
+}
+
+.card h2 {
+    font-family: "League Spartan", sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 3%
+}
+
+
 
 footer {
     border-top: 2px solid rgba(255, 255, 255, 0.6);;
     text-align: center;
     padding: 5px;
     margin-top: 10%;
-    overflow: hidden
+   
 }
 
 footer p {
@@ -50,95 +78,28 @@ footer p {
     
     color: rgba(255, 255, 255, 0.6);
 
-    overflow: hidden
-}
-
-
-.card {
-
-    background-color: rgba(255, 255, 255, 0.02);
-    border-radius: 30px;
-    margin: 5%;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
-    min-height: 70vh;
-    overflow: hidden
-}
-
-.card-tall {
-    background-color: rgba(255, 255, 255, 0.02);
-    border-radius: 30px;
-    margin: 5%;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
-    min-height: 70vh;
-    overflow: hidden;
     
 }
 
-.card-flex {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.02);
-    border-radius: 30px;
-    margin: 5%;
-    height: 60vh;
-    margin-top: auto;
-    margin-bottom: auto;
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.1);
-    overflow: hidden
-}
+@media (width <= 60rem) {
+    .grid-1-2 {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
 
-.card p {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 1em;
+    .grid-2-1 {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
 
-    margin-top: 0;
+    .grid-1-1-1 {
+        grid-template-columns: 1fr;
+        height: fit-content;
+    }
 
-    padding: 1em;
-    padding-top: 0;
-    
-    color: rgba(255, 255, 255, 0.6);
-    overflow: hidden
-}
-
-.card h2 {
-    font-family: "League Spartan", sans-serif;
-    font-weight: 500;
-    font-size: 2em;
-
-    margin-top: 0;
-
-    padding: 1em;
-    padding-left: 0.6em;
-    padding-bottom: 0.3em;
-    
-    color: rgba(255, 255, 255, 0.9);
-    overflow: hidden
-}
-
-.card-flex img {
-    display: block;
-    margin: auto;
-    height: 80%;
-    border-radius: 30px;
-    overflow: hidden
-}
-
-/*
-.card img {
-    display: block;
-    position: relative;
-    margin: auto;
-    height: 80%;
-    border-radius: 30px;
-    text-align: center;
+    .grid-1-1 {
+        grid-template-columns: 1fr;
+        height: fit-content
+    }
 }
