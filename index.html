@@ -1,129 +1,157 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Aimify</title>
 
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="stylesheets/navbar.css">
-        <link rel="stylesheet" href="stylesheets/hero.css">
-        <link rel="stylesheet" href="stylesheets/sections.css">
-        <link rel="stylesheet" href="stylesheets/buttons.css">
-        <link rel="stylesheet" href="stylesheets/global.css">
-        <link rel="stylesheet" href="stylesheets/images.css">
+<head>
+    <title>Aimify</title>
 
-        <!--Scripts-->
+    <!--Stylesheets-->
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="stylesheet" href="stylesheets/hero.css">
+    <link rel="stylesheet" href="stylesheets/sections.css">
+    <link rel="stylesheet" href="stylesheets/buttons.css">
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <link rel="stylesheet" href="stylesheets/images.css">
 
-        <script src="scripts/dropdown.js"></script>
+    <!--Scripts-->
 
-        <!--Google Fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-        <!--Tag required to make viewport units work as intended-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+    <script src="scripts/dropdown.js"></script>
 
-    <body>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
-        <div class="navbar">
-            <img src="assets/logo.svg" class="logo">
-            <ul class="navbar-links">
-                <li><a href="https://www.fletchworks.dev/" class="navbar-link">Back to Fletchworks</a></li>
-                <li><a href="" class="navbar-link">Github</a></li>
-                <li><a href="" class="navbar-link">Home</a></li>
-            </ul>
+    <!--Tag required to make viewport units work as intended-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
 
-            <button class="le-hamburger" onclick="menu_toggle()"><img src="assets/hamburger.svg" class="le-hamburger"></button>
+<body>
+
+    <div class="navbar">
+        <img src="assets/logo.svg" class="logo">
+        <ul class="navbar-links">
+            <li><a href="https://www.fletchworks.dev/" class="navbar-link">Back to Fletchworks</a></li>
+            <li><a href="" class="navbar-link">Github</a></li>
+            <li><a href="" class="navbar-link">Home</a></li>
+        </ul>
+
+        <button class="le-hamburger" onclick="menu_toggle()"><img src="assets/hamburger.svg"
+                class="le-hamburger"></button>
+    </div>
+
+    <div id="mobile-only" class="mobile-content">
+        <ul class="mobile-links">
+            <li><a href="https://www.fletchworks.dev/" class="mobile-link">Back to Fletchworks</a></li>
+            <li><a href="" class="mobile-link">Github</a></li>
+            <li><a href="" class="mobile-link">Home</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="hero-banner">
+        <div class="hero-text">
+            <h1 class="intro-title">Welcome to the future of scoring.</h1>
+            <p class="intro-text">Aimify by Fletchworks will revolutionise the way you score and track your shooting
+                progress over time, using customised ML algorithms designed to streamline scoring when at the target.
+            </p>
+            <p class="intro-text">Say goodbye to paper scoresheets and clunky plotting interfaces, and say hello to a
+                clean and modern UI, cloud backups and automatic scoring using your phone's camera.</p>
+            <p class="intro-text">Coming soon to a range near you!</p>
+            <a href="" class="register-interest">Register your interest</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+
+        <div class="grid-1-2">
+            <div class="card">
+                <h2>ML powered scoring</h2>
+                <p>Aimify will harness the power of YoloV8 to train an instance segmentation model on a library of
+                    images of target faces and arrows.</p>
+                <p>The ability to detect the rings of the target, known as scoring zones, in addition to arrows, enables
+                    the ability to determine which score an arrow should recieve, based on which zone it occludes.</p>
+                <p>This will enable automated scoring, where a user can simply point their phone at the target, using
+                    on-screen guides for the best results, and have the scores automatically calculated. This will
+                    reduce the time taken inbetween ends, with the added benefit of plotting, a subjective and
+                    time-consuming process.</p>
+            </div>
+
+            <div class="cvat-card">
+            </div>
         </div>
 
-        <div id="mobile-only" class="mobile-content">
-            <ul class="mobile-links">
-                <li><a href="https://www.fletchworks.dev/" class="mobile-link">Back to Fletchworks</a></li>
-                <li><a href="" class="mobile-link">Github</a></li>
-                <li><a href="" class="mobile-link">Home</a></li>
-            </ul>
-        </div>
+        <div class="grid-2-1">
+            <div class="figma-card">
+            </div>
+            <div class="card">
+                <h2>Clean user interface</h2>
+                <p>Aimify's UI will be built using the latest frameworks and design guidelines, including React Native,
+                    Paper, and Material V3</p>
+                <p>This will ensure a minimialistic UI, allowing you to focus on what truely matters, shooting. In
+                    addition, using React Native opens up the app to every major platform, including Android, IOS and
+                    even Linux</p>
 
-        
-
-        <div class="hero-banner">
-            <div class="hero-text">
-                <h1 class="intro-title">Welcome to the future of scoring.</h1>
-                <p class="intro-text">Aimify by Fletchworks will revolutionise the way you score and track your shooting progress over time, using customised ML algorithms designed to streamline scoring when at the target.</p>
-                <p class="intro-text">Say goodbye to paper scoresheets and clunky plotting interfaces, and say hello to a clean and modern UI, cloud backups and automatic scoring using your phone's camera.</p>
-                <p class="intro-text">Coming soon to a range near you!</p>
-                <a href="" class="register-interest">Register your interest</a>
+                <a href="" class="button-card">View Figma design files</a>
             </div>
         </div>
 
-        <div class="main-content">
-
-            <div class="grid-1-2">
-                <div class="card">
-                    <h2>ML powered scoring</h2>
-                    <p>Aimify will harness the power of YoloV8 to train an instance segmentation model on a library of images of target faces and arrows.</p>
-                    <p>The ability to detect the rings of the target, known as scoring zones, in addition to arrows, enables the ability to determine which score an arrow should recieve, based on which zone it occludes.</p>
-                    <p>This will enable automated scoring, where a user can simply point their phone at the target, using on-screen guides for the best results, and have the scores automatically calculated. This will reduce the time taken inbetween ends, with the added benefit of plotting, a subjective and time-consuming process.</p>
-                </div>
-
-                <div class="cvat-card">
-                </div>
+        <div class="grid-1-1-1">
+            <div class="card">
+                <h2>Free and Open Source</h2>
+                <p>At this time, Aimify is intended to be released as an open source project to make it as widespread as
+                    possible, with all files being released on Github for ease of acsess in addition to major app
+                    stores.</p>
+                <p>This being said, the server-side software required for running and hosting competitions will be
+                    released as free for non-commercial use, with a small licencing fee for buisnesses and
+                    organisations.</p>
+                <a href="" class="button-card">View on Github</a>
             </div>
 
-            <div class="grid-2-1">
-                <div class="figma-card">
-                </div>
-                <div class="card">
-                    <h2>Clean user interface</h2>
-                    <p>Aimify's UI will be built using the latest frameworks and design guidelines, including React Native, Paper, and Material V3</p>
-                    <p>This will ensure a minimialistic UI, allowing you to focus on what truely matters, shooting. In addition, using React Native opens up the app to every major platform, including Android, IOS and even Linux</p>
-                
-                    <a href="" class="button-card">View Figma design files</a>
-                </div>
-            </div>
-            
-            <div class="grid-1-1-1">
-                <div class="card">
-                    <h2>Free and Open Source</h2>
-                    <p>At this time, Aimify is intended to be released as an open source project to make it as widespread as possible, with all files being released on Github for ease of acsess in addition to major app stores.</p>
-                    <p>This being said, the server-side software required for running and hosting competitions will be released as free for non-commercial use, with a small licencing fee for buisnesses and organisations.</p>
-                    <a href="" class="button-card">View on Github</a>
-                </div>
-
-                <div class="card">
-                    <h2>Host competitions</h2>
-                    <p>Aimify will feature a competitions tab, where archers can set each other challenges and competitions, share recently earned awards, and more.</p>
-                    <p>For competition organisers, additional software will be made available to make the managment of events easier, including communications with archers, score tracking, and more, under one unified system. This will be made free for non-for-profit events, and a small licencing fee for all other uses.</p>
-                </div>
-
-                <div class="card">
-                    <h2>Cloud backups</h2>
-                    <p>Through the app, you will be able to upload your scoresheets to your prefered cloud provider, at intervals that suit you. Data will be stored in CSV files, making it easy for you to export your data and back it up manually.</p>
-                    <p>You can also opt-in to store images of each end, taken when using the automatic scoring feature alongside your backups.</p>
-                </div>
+            <div class="card">
+                <h2>Host competitions</h2>
+                <p>Aimify will feature a competitions tab, where archers can set each other challenges and competitions,
+                    share recently earned awards, and more.</p>
+                <p>For competition organisers, additional software will be made available to make the managment of
+                    events easier, including communications with archers, score tracking, and more, under one unified
+                    system. This will be made free for non-for-profit events, and a small licencing fee for all other
+                    uses.</p>
             </div>
 
-            <div class="grid-1-1">
-                <div class="card">
-                    <h2>We need your help!</h2>
-                    <p>If you have any suggestions or ideas, whether you are a programer, archery, or just a person who stumbled upon this site, then we would love to hear from you</p>
-                    <p>Feel free to get in touch via our Fillout Form. If you are happy to, we'd love to follow up on any comments to ensure that this app cater to as many users as possible</p>
-                    <a href="" class="button-card">Fillout feedback form</a>
-                </div>
-
-                <div class="ad-card">
-                </div>
+            <div class="card">
+                <h2>Cloud backups</h2>
+                <p>Through the app, you will be able to upload your scoresheets to your prefered cloud provider, at
+                    intervals that suit you. Data will be stored in CSV files, making it easy for you to export your
+                    data and back it up manually.</p>
+                <p>You can also opt-in to store images of each end, taken when using the automatic scoring feature
+                    alongside your backups.</p>
             </div>
-
         </div>
 
-        <footer>
-            <p>made with ❤ by Fletchworks</p>
-            <!--Alternative footer: © 2024 David, Fletchworks. All rights reserved-->
-        </footer>
+        <div class="grid-1-1">
+            <div class="card">
+                <h2>We need your help!</h2>
+                <p>If you have any suggestions or ideas, whether you are a programer, archery, or just a person who
+                    stumbled upon this site, then we would love to hear from you</p>
+                <p>Feel free to get in touch via our Fillout Form. If you are happy to, we'd love to follow up on any
+                    comments to ensure that this app cater to as many users as possible</p>
+                <a href="" class="button-card">Fillout feedback form</a>
+            </div>
 
-    </body>
+            <img class="ad-card" src="/assets/ad-1.png"></img>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>made with ❤ by Fletchworks</p>
+        <!--Alternative footer: © 2024 David, Fletchworks. All rights reserved-->
+    </footer>
+
+</body>
+
 </html>
