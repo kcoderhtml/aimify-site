@@ -40,6 +40,61 @@
     overflow: hidden;
 }
 
+.mobile-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+#mobile-only {
+    display: none;
+}
+
+
+.mobile-links{
+    display: block;
+    
+    /*Styling*/
+    
+
+    /*Remove styling*/
+    list-style-type: none;
+    overflow: hidden;
+
+    margin-top: 20%;
+    
+    
+}
+
+.mobile-links li {
+    padding-left: 3%;
+    padding-right: 3%;
+    
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+}
+
+.mobile-link {
+    text-align: center;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 30px;
+    height: fit-content;
+    width: 90%;
+    padding: 1.5%;
+    margin-bottom: 1em;
+
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+
+
 .logo {
     max-height: 80%;
 }
@@ -53,7 +108,13 @@
     
 }
 
-@media (width <= 50rem) {
+.le-hamburger {
+    display: none;
+    background-color: unset;
+    border: unset;
+}
+
+@media (width <= 60rem) {
     .navbar{
         position: absolute;
         background-color: rgba(255, 255, 255, 0);
@@ -61,5 +122,9 @@
 
     .navbar-links{
         display: none;
+    }
+
+    .le-hamburger{
+        display: inline;
     }
 }

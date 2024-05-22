@@ -30,6 +30,9 @@
     transition: 0.5s;
 }
 
+
+
+
 @media (width <= 60rem) {
     .button-card {
         display: block;
@@ -37,3 +40,4 @@
         position: unset;
     }
 }
+

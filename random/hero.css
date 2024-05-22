@@ -36,3 +36,9 @@
     
     color: white
 }
+
+@media (width <= 60rem) {
+    .intro-text{
+        width: 100vw;
+    }
+}

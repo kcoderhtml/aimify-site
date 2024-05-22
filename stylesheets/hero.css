@@ -65,3 +65,9 @@
 .hero-text {
     margin-left: 3%;
 }
+
+@media (width <= 50rem) {
+    .intro-text{
+        width: 100%;
+    }
+}
